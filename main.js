@@ -10,11 +10,11 @@ class Example extends Phaser.Scene {
   }
   update() {
     console.log("FPS:", this.game.loop.actualFps);
+    this.drawRectangle();
     this.array2D = changeArray2D(this.array2D);
-    this.drawLife();
     this.scene.restart();
   }
-  drawLife() {
+  drawRectangle() {
     for (let i = 0; i < this.ARRAY_SIZE; i++) {
       for (let j = 0; j < this.ARRAY_SIZE; j++) {
         if (this.array2D[i][j] == 1) {
