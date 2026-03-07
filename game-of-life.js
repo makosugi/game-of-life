@@ -4,7 +4,7 @@ export default class GameOfLife extends Phaser.Scene {
   constructor() {
     super('GameOfLife');
     this.ARRAY_SIZE = 100;
-    this.RECTANGLE_SIZE = 5;
+    this.RECTANGLE_SIZE = 10;
     this.array2D = randomArray2D(this.ARRAY_SIZE);
   }
   create () {
